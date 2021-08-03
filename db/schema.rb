@@ -10,22 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_03_164922) do
+ActiveRecord::Schema.define(version: 2021_08_03_173432) do
 
   create_table "customers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.text "first_name"
+    t.text "last_name"
     t.datetime "first_visit"
     t.datetime "most_recent_visit"
   end
 
   create_table "menu_items", force: :cascade do |t|
-    t.string "name"
+    t.text "name"
     t.float "price"
   end
 
   create_table "order_items", force: :cascade do |t|
-    t.float "item_price"
+    t.float "price"
     t.integer "order_id"
     t.integer "menu_item_id"
   end
