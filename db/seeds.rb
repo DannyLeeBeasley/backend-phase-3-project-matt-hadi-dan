@@ -6,10 +6,10 @@ MenuItem.destroy_all
 OrderItem.destroy_all
 
 puts "Creating customers..."
-dan_beasley = Customer.create(first_name: "Dan", last_name: "Beasley", first_visit: (2021, 8, 4, 8, 17), most_recent_visit: DateTime.current)
-hadi_abaza = Customer.create(first_name: "Hadi", last_name: "Abaza", first_visit: (2021, 8, 4, 8, 17), most_recent_visit: DateTime.current)
-matt_obrien = Customer.create(first_name: "Matt", last_name: "O'Brien", first_visit: (2021, 8, 4, 8, 17), most_recent_visit: DateTime.current)
-kate_beasley = Customer.create(first_name: "Matt", last_name: "O'Brien", first_visit: (2021, 8, 6, 12, 11), most_recent_visit: DateTime.current)
+dan_beasley = Customer.create(first_name: "Dan", last_name: "Beasley", first_visit: 20210804081700, most_recent_visit: DateTime.current)
+hadi_abaza = Customer.create(first_name: "Hadi", last_name: "Abaza", first_visit: 20210804081700, most_recent_visit: DateTime.current)
+matt_obrien = Customer.create(first_name: "Matt", last_name: "O'Brien", first_visit: 20210804081700, most_recent_visit: DateTime.current)
+kate_beasley = Customer.create(first_name: "Matt", last_name: "O'Brien", first_visit: 20210806121100, most_recent_visit: DateTime.current)
 
 puts "Creating menu items..."
 coffee = MenuItem.create(name: "Coffee", price: 2.50, image: "app/assets/images/coffee.jpeg")
