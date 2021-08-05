@@ -34,6 +34,6 @@ tomato_mozzerella_panini = MenuItem.create(name: "Tomato Mozzerella Panini", pri
 chicaken_quinoa_red_pepper_protein_bowl = MenuItem.create(name: "Chicken Quinoa Red Pepper Protein Bowl", price: 8.50, image: "https://reciperunner.com/wp-content/uploads/2019/07/Barbecue-Chicken-Quinoa-Bowls-Picture.jpg")
 blueberry_muffin = MenuItem.create(name: "Blueberry Muffin", price: 4.50, image: "https://ohsweetbasil.com/wp-content/uploads/the-best-blueberry-muffins-recipe-7-scaled.jpg")
 banana_nut_bread = MenuItem.create(name: "Banana Nut Bread", price: 4.50, image: "https://walkingonsunshinerecipes.com/wp-content/uploads/2018/08/Banana-Nut-Bread-735x552.jpg")
-chocolate_brownie = MenuItem.create(name: "Chocolate Brownie", price: 4.50, image: "https://walkingonsunshinerecipes.com/wp-content/uploads/2018/08/Banana-Nut-Bread-735x552.jpg")
+chocolate_brownie = MenuItem.create(name: "Chocolate Brownie", price: 4.50, image: "https://upload.wikimedia.org/wikipedia/commons/6/68/Chocolatebrownie.JPG")
 
 puts "✅ Done seeding!"
