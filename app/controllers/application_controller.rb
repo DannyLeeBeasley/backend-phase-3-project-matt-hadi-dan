@@ -6,10 +6,10 @@ class ApplicationController < Sinatra::Base
   #   menu_items.to_json
   # end
 
-  # get "/menu" do
-  #   menu_items = MenuItem.all
-  #   menu_items.to_json
-  # end
+  get "/menu" do
+    menu_items = MenuItem.all
+    menu_items.to_json
+  end
 
   # get "/order" do
   #   new_order = OrderItem.all
