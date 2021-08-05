@@ -11,17 +11,22 @@ class ApplicationController < Sinatra::Base
     menu_items.to_json
   end
 
-  # get "/order" do
-  #   new_order = OrderItem.all
-  #   new_order.to_json
-  # # end
+  get "/order" do
+    new_order = OrderItem.all
+    new_order.to_json
+  end
 
   # get "/orderhistory" do
+
   # end
 
-  # post '/order' do
-    
-  # end
+  post '/order' do
+    new_order = Order.create(
+      name: params[:name],
+      image: params[:image]
+    )
+    new_message.to_json
+  end
 
 
 end
