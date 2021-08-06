@@ -11,6 +11,11 @@ class ApplicationController < Sinatra::Base
     menu_items.to_json
   end
 
+  get "/menu/:id" do
+    menu_item = MenuItem.find(params[:id])
+    menu_item.to_json
+  end
+
   # get "/order" do
   #   new_order = OrderItem.all
   #   new_order.to_json
